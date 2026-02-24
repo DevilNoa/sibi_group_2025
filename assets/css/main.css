@@ -4482,6 +4482,71 @@ input, select, textarea {
 				}
 
 		}
+.services {
+  width: 100%;
+}
+
+/* Header */
+.services-header {
+  margin-bottom: 3.5rem;
+}
+
+.services-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.services-header p {
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #777;
+}
+
+/* Rows */
+.service-row {
+  display: grid;
+  grid-template-columns: 360px 1fr; 
+  gap: 5rem;                       
+  padding: 3.5rem 0;               
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.service-row:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Left side */
+.service-title h2 {
+  margin: 0;
+  font-size: 2rem;                 
+  line-height: 1.25;
+  word-break: normal;
+}
+
+.service-title span {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #777;
+}
+
+/* Right side */
+.service-text p {
+  margin: 0;
+  max-width: 760px;                
+  line-height: 1.8;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+  .service-row {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+}
 
 /* Nav Panel */
 
